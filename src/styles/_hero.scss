@@ -1,0 +1,72 @@
+@use 'variables';
+
+.hero{
+    padding-top: 4rem;
+    padding-bottom: 6.25rem;
+    background-image: url('../images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: black;
+        opacity: 0.80;
+    }
+
+    &__text{
+        background-image: linear-gradient(to right,variables.$purple, variables.$yellow, variables.$pink);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-top: 4rem;
+
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    #contador{
+        background-image: linear-gradient(to right,#ffcc00, #fc5db2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }    
+
+    &__logo{
+        
+        margin: 0 auto;
+        height: 5rem;
+        display: block;
+    }
+
+    @media screen and (max-width: 40rem){
+        padding: 2.5rem 0;
+
+        &__logo{
+            height: 1.5rem;
+        }
+
+        &__text{
+            font-size: 1.375rem;
+            line-height: 1.5rem;
+            margin: 24px 0;
+        }
+        
+    }
+
+    @media screen and (max-width:64rem) {
+       
+    }
+}
+

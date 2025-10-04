@@ -1,0 +1,26 @@
+{
+  "name": "ebac-landing-aniversario",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/*.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunocoitinho/ebac-landing-aniversario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunocoitinho/ebac-landing-aniversario/issues"
+  },
+  "homepage": "https://github.com/brunocoitinho/ebac-landing-aniversario#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
+    "sharp": "^0.33.5"
+  }
+}
